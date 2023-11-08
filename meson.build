@@ -188,7 +188,7 @@ endif
 subdir ('codec')
 subdir ('test')
 
-libopenh264 = library('openh264',
+libopenh264 = static_library('openh264',
   link_whole: [libcommon, libprocessing, libencoder, libdecoder],
   install: true,
   soversion: major_version,
